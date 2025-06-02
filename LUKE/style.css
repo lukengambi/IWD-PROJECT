@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .home-bg {
+    background: url('images/background\ 1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  nav h1 {
+    font-size: 1.8rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    color: white;
+    padding: 6rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e65c00;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(162, 190, 192, 0.85);
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    max-width: 300px;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .feature h3 {
+    color: #d5b12d;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+ /* General Body Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #004d80;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+/* Main Section */
+main {
+  padding: 2rem;
+}
+
+
+
+
+/* Product Card Styling */
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.product.reverse {
+  flex-direction: row-reverse;
+}
+
+.product img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.product.reverse img {
+  border-radius: 0 10px 10px 0;
+}
+
+.description {
+  flex: 1;
+  padding: 2rem;
+}
+
+.description h2 {
+  color: #004d80;
+  margin-bottom: 0.5rem;
+}
+
+.description p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #004d80;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.product {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.product.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Us - Hero Section */
+.about-hero {
+  background: url('images/hero-about.jpg') no-repeat center center/cover;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.about-hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Mission and Values Section */
+.about-mission {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #f4f4f4;
+}
+
+.about-mission h3 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 1rem;
+}
+
+.about-mission p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.about-mission ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-mission li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Team Section */
+.about-team {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+.about-team h3 {
+  font-size: 2.5rem;
+  color: #004aad;
+  margin-bottom: 2rem;
+}
+
+.team-member {
+  display: inline-block;
+  width: 250px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h4 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #004aad;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #004aad;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+
+
+/* Contact Us - Hero Section */
+.contact-hero {
+  background: linear-gradient(to bottom right, #004aad, #00c6ff);
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid #fff;
+}
+
+.contact-hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contact-hero p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Form Section */
+.contact-form {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.contact-form h3 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #004aad;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #003b8b;
+}
+
+/* Comments Section */
+.contact-comments {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact-comments h3 {
+  font-size: 2.5rem;
+  color: #004aad;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.contact-comments .comment {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-comments .comment p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-comments .comment strong {
+  font-size: 1.3rem;
+  color: #004aad;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+/* Contact Info Section */
+.contact-info {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #f4f4f4;
+  border-top: 2px solid #e0e0e0;
+}
+
+.contact-info h3 {
+  font-size: 2.5rem;
+  color: #004aad;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.contact-info li {
+  margin-bottom: 1rem;
+}
+
+.contact-info li strong {
+  color: #004aad;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #004aad;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+  }
+}
+
+  

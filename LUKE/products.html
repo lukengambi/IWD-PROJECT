@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | MarketMuse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Our Products</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product">
+        <img src="images/2.jpg" alt="Banja Washing Powder">
+        <div class="description">
+          <h2>Banja Washing Powder</h2>
+          <p>Experience the power of deep cleaning with Banja! This ultra-effective washing powder removes tough stains, brightens your laundry, and leaves your clothes smelling fresh all day. Trusted by households across Zambia for unbeatable quality and value.</p>
+        </div>
+      </section>
+      
+      <section class="product reverse">
+        <img src="images/3.jpg" alt="Mediherb Bathing Soap">
+        <div class="description">
+          <h2>Mediherb Bathing Soap</h2>
+          <p>Pamper your skin with the healing touch of nature. Mediherb is packed with herbal goodness that refreshes, hydrates, and protects. Perfect for daily use—gentle on sensitive skin yet tough on dirt.</p>
+        </div>
+      </section>
+      
+      <section class="product">
+        <img src="images/4.jpg" alt="Amazon Pencil Candy">
+        <div class="description">
+          <h2>Amazon Pencil Candy</h2>
+          <p>Colorful, chewy, and absolutely fun! Amazon Pencil Candy is a burst of flavor that delights kids and adults alike. Great for parties, lunchboxes, and anytime sweet cravings. Taste the joy in every bite!</p>
+        </div>
+      </section>
+      
+      <section class="product reverse">
+        <img src="images/5.jpg" alt="Hot Drops">
+        <div class="description">
+          <h2>Hot Drops</h2>
+          <p>Say goodbye to cough and throat discomfort with Hot Drops. These fast-acting lozenges soothe irritation and clear your airways. Ideal for cold seasons—keep them in your pocket and breathe easy anywhere.</p>
+        </div>
+      </section>
+      
+      <section class="product">
+        <img src="images/6.jpg" alt="Boom Force Cleaner">
+        <div class="description">
+          <h2>Boom Force Cleaner</h2>
+          <p>Bring back the sparkle to your home with Boom Force. This multi-surface cleaner powers through grease, grime, and stains—leaving a spotless shine and a refreshing scent. Trusted by professionals, loved by families.</p>
+        </div>
+      </section>
+      
+      <section class="product reverse">
+        <img src="images/7.jpg" alt="Shaky Joe">
+        <div class="description">
+          <h2>Shaky Joe</h2>
+          <p>Thirsty for something exciting? Shaky Joe is a fruity, milky mahewu that packs both nutrition and flavor. Refreshingly cool and deliciously smooth, it’s the ultimate Zambian drink for work, play, and everything in between.</p>
+        </div>
+      </section>
+      
+      <section class="product">
+        <img src="images/8.jpg" alt="Boom Shine Plus">
+        <div class="description">
+          <h2>Boom Shine Plus</h2>
+          <p>Make your floors and surfaces shine like never before! Boom Shine Plus polishes and protects with every swipe. A little goes a long way, leaving behind a glossy finish and a scent that lingers in the best way.</p>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MarketMuse | Powered by TradeKings Zambia</p>
+  </footer>
+  <script>
+    const products = document.querySelectorAll('.product');
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    products.forEach(product => {
+      observer.observe(product);
+    });
+  </script>
+  
+</body>
+</html>
